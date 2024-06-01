@@ -1,0 +1,79 @@
+import java.util.ArrayList; 
+import java.util.Comparator; 
+import java.util.list; 
+import java.util.Scanner; 
+class exp 
+{ 
+private String dp; 
+private double a; 
+} 
+public exp(String dp,double a) 
+{ 
+this.description=dp; 
+this.amount=a; 
+} 
+public string getdp() 
+{ 
+return dp; 
+} 
+public double geta() 
+{ 
+return a; 
+} 
+class ft 
+{ 
+private List<exp>expenses; 
+public ft() 
+{ 
+expenses=new ArrayList<>(); 
+} 
+public void addexp(exp expense) 
+{ 
+expenses.add(exp); 
+} 
+public List<exp>texp(double budget) 
+{ 
+List<exp>sexp=new ArrayList<>(); 
+expenses.sort(Comparator.compDouble(exp::geta)); 
+double rb=budget; 
+for(exp expense:expenses) 
+{ 
+if(expense.geta()<=rb) 
+{ 
+sexp.add(expense); 
+rb-=expense.geta(); 
+} 
+} 
+return sexp; 
+} 
+} 
+class main 
+{ 
+public static void main(String[] args) 
+{ 
+Scanner sc=new Scanner(System.in); 
+ft x=new ft(); 
+while(true) 
+{ 
+System.out.println("enter the expenses (or) quit"); 
+sp=sc.nextLine(); 
+if(dp.equaIsIgnoreCase("quit")) 
+{ 
+break; 
+} 
+System.out.println("Enter amount"); 
+double a=sc.nextDouble(); 
+sc.nextLine(); 
+exp expense=new exp(dp,a); 
+x.addexp(expense); 
+} 
+System.out.println("Enter ur budget"); 
+double budgett=sc.nextDouble(); 
+List<exp>sexp=x.texp(budget); 
+System.out.println("Select Exp with in the given amount"); 
+for(exp expense:sexp) 
+{ 
+System.out.println("Description:"+expense.getdp()+",a:"+expense.geta()); 
+}
+} 
+} 
